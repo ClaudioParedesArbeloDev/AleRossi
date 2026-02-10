@@ -1,14 +1,33 @@
+@font-face {
+  font-family:'AddingtonCF-DemiBold';
+  src: url(fonts/AddingtonCF-DemiBold.otf);
+}
+
+@font-face {
+  src: url(fonts/AddingtonCF-Regular.otf);
+  font-family: 'AddingtonCF-Regular';
+}
+
+@font-face {
+  src: url(fonts/AvenirNextLTPro-Bold.otf);
+  font-family: 'AvenirNextLTPro-Bold';
+}
+
+@font-face {
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+  font-family: 'AvenirNextLTPro-Regular';
+}
+
 body{
   margin: 0;
   overflow-x: hidden;
 }
 /*Aqui comienza el header escritorio*/
 .header{
-  background: #14463e;
+  background: #15463F;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
   width: 100vw;
   z-index: 2;
 }
@@ -23,6 +42,7 @@ body{
   display: flex;
   color: white;
   align-items: center;
+  font-family: 'AddingtonCF-Regular';
 }
 
 .bookappointmentText{
@@ -36,6 +56,7 @@ body{
 
 .phone-link{
   color: white;
+  font-family: 'AvenirNextLTPro-Regular';
   text-decoration: none;
   font-size: 1.2em;
   padding-left: 1em;
@@ -49,6 +70,12 @@ body{
 
 
 /*Switch del idioma*/
+.lang{
+  display: flex;
+  font-size: 1.5rem;
+  color: white;
+}
+
 .lang-toggle {
   position: relative;
   display: inline-flex;
@@ -72,29 +99,21 @@ body{
   transition: background-color 300ms ease;
 }
 
-
 .toggle-slider::after {
   content: "";
   position: absolute;
-  top: 0.1rem;
+  top: 0.2rem;
   left: 0.25rem;
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url('./img/spain.png');
-  background-size: cover;
-  background-position: center;
-  scale: 1.5;
+  background: #648156;
   border-radius: 9999px;
   transition: transform 300ms ease;
 }
 
 .toggle-input:checked + .toggle-slider::after {
-  transform: translateX(2rem);
-  background-image: url('./img/usa.png');
-}
-
-.toggle-slider:hover::after {
-  scale: 1.4;
+  transform: translateX(3rem);
+  background: #648156;
 }
 
 .toggle-input:focus + .toggle-slider {
@@ -117,9 +136,8 @@ body{
 .title{
   color: white;
   font-size: 5em;
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   margin: 0;
-  letter-spacing: 5px;
   width: 50vw;
   padding-left: 10vw;
 }
@@ -127,9 +145,8 @@ body{
 .mainText{
   color: white;
   font-size: 1.9em;
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   margin: 0;
-  letter-spacing: 2px;
   width: 40vw;
   padding-left: 10vw;
 }
@@ -137,7 +154,7 @@ body{
 .mainService{
   color: rgb(78, 235, 104);
   font-size: 1.9em;
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   margin: 0;
   width: 40vw;
   padding: 40px 0 40px 10vw;
@@ -146,8 +163,8 @@ body{
 .scheduleConsultation{
   color: white;
   font-size: 1.9em;
-  font-family: "DM Serif Display", serif;
-  background: #14463e;
+  font-family: 'AddingtonCF-Regular';
+  background: #15463F;
   display: flex;
   align-items: center;
   width: 21vw;
@@ -159,10 +176,11 @@ body{
   p{
     padding: 0 10px 0 10px;
   }
-  i{
-    background: #8aa181;
-    border-radius: 100%;
-    padding: 15px;
+  img{
+    width: 30px;
+    background: #648156;
+    padding: 19px;
+    border-radius: 20px;
   }
 }
 
@@ -173,7 +191,7 @@ body{
 }
 
 .titleSectionOne{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   color: #14463e;
   display: flex;
   justify-content: center;
@@ -363,4 +381,53 @@ body{
   grid-template-rows: repeat(2, 1fr);
   width: 70vw;
 
+}
+
+.sectionWhite{
+  background-image: url(./img/sectionFinal.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leftWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 35vw;
+}
+
+.getStartTitle{
+  font-family: "DM Serif Display", serif;
+  font-size: 4.5em;
+  color: #14463e;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.getStartText{
+  font-family: "DM Serif Display", serif;
+  font-size: 1.8em;
+  color: #14463e;
+}
+
+.calmNow{
+  font-family: "DM Serif Display", serif;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  background: #14463e;
+  padding: 0 20px;
+  color: white;
+  border-radius: 50px;
+  p{
+    padding: 0 20px;
+  }
+  i{
+    padding: 15px;
+    background: #648156;
+    border-radius: 100%;
+  }
 }

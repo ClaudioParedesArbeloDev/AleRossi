@@ -22,6 +22,7 @@ export const translations = {
     sectionGreenText3: "Representación legal fluida en inglés y español para una comunicación clara durante todo su caso.", 
     sectionGreenTitle4: "Especialista en inmigración",
     sectionGreenText4: "Enfoque dedicado en la ley de inmigración con conocimiento profundo de los procesos de visa e inmigración basada en la familia.",
+    
   },
   en: {
     bookappointment: "Book your appointment",
@@ -45,5 +46,8 @@ export const translations = {
     sectionGreenText3: "Fluent legal representation in English and Spanish for clear communication throughout your case.", 
     sectionGreenTitle4: "Immigration Specialist",
     sectionGreenText4: "Dedicated focus on immigration law with in-depth knowledge of visa processes and family-based immigration.",
+    GetStart: "Get Started Today",
+    GetStartText: "Schedule your consultation and take the first step toward resolving your legal matter.",
+    calmNow: "Calm now!",
   }
 };
