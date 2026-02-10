@@ -1,0 +1,366 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+/*Aqui comienza el header escritorio*/
+.header{
+  background: #14463e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  width: 100vw;
+  z-index: 2;
+}
+
+.logo_alexa{
+  width: 300px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.bookappointment{
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.bookappointmentText{
+  font-size: 1.3em;
+}
+
+.calendar{
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+.phone-link{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-left: 1em;
+  transition: all 300ms ease;
+}
+
+.phone-link:hover{
+  color: #18f504;
+  scale: 120%;
+}
+
+
+/*Switch del idioma*/
+.lang-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 6rem;           
+  height: 3rem;          
+  border-radius: 9999px;
+  border: 1px solid #648156;
+  transition: background-color 300ms ease;
+}
+
+
+.toggle-slider::after {
+  content: "";
+  position: absolute;
+  top: 0.1rem;
+  left: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url('./img/spain.png');
+  background-size: cover;
+  background-position: center;
+  scale: 1.5;
+  border-radius: 9999px;
+  transition: transform 300ms ease;
+}
+
+.toggle-input:checked + .toggle-slider::after {
+  transform: translateX(2rem);
+  background-image: url('./img/usa.png');
+}
+
+.toggle-slider:hover::after {
+  scale: 1.4;
+}
+
+.toggle-input:focus + .toggle-slider {
+  outline-offset: 2px;
+}
+
+/* Aqui termina el header escritorio */
+
+/* Seccion Principal */
+.mainSection{
+  background-image: url('./img/alexa.jpg');
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title{
+  color: white;
+  font-size: 5em;
+  font-family: "DM Serif Display", serif;
+  margin: 0;
+  letter-spacing: 5px;
+  width: 50vw;
+  padding-left: 10vw;
+}
+
+.mainText{
+  color: white;
+  font-size: 1.9em;
+  font-family: "DM Serif Display", serif;
+  margin: 0;
+  letter-spacing: 2px;
+  width: 40vw;
+  padding-left: 10vw;
+}
+
+.mainService{
+  color: rgb(78, 235, 104);
+  font-size: 1.9em;
+  font-family: "DM Serif Display", serif;
+  margin: 0;
+  width: 40vw;
+  padding: 40px 0 40px 10vw;
+}
+
+.scheduleConsultation{
+  color: white;
+  font-size: 1.9em;
+  font-family: "DM Serif Display", serif;
+  background: #14463e;
+  display: flex;
+  align-items: center;
+  width: 21vw;
+  height: 7vh;
+  margin: 0 0 0 10vw;
+  padding: 10px;
+  border-radius: 40px;
+  text-decoration: none;
+  p{
+    padding: 0 10px 0 10px;
+  }
+  i{
+    background: #8aa181;
+    border-radius: 100%;
+    padding: 15px;
+  }
+}
+
+/* Seccion Blanca */
+
+.Section{
+  height: 100vh;
+}
+
+.titleSectionOne{
+  font-family: "DM Serif Display", serif;
+  color: #14463e;
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+
+.contentSectionOne{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapperSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 60vh;
+  background: #efeeeb;
+  color: black;
+  padding: 50px;
+  transition: all 300ms ease;
+  i{
+    font-size: 5em;
+  }
+}
+
+.wrapperSection:hover{
+  background-image: url(./img/fondoSection.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.firstWrapperSectionTitleLeft{
+  font-family: "DM Serif Display", serif;
+  font-size: 2.8em;
+}
+
+.firstWrapperSectionTextLeft{
+  font-family: "DM Serif Display", serif;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.firstWrapperSectionTitleCenter{
+  font-family: "DM Serif Display", serif;
+  font-size: 2.8em;
+}
+
+.firstWrapperSectionTextCenter{
+  font-family: "DM Serif Display", serif;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.firstWrapperSectionTitleRight{
+  font-family: "DM Serif Display", serif;
+  font-size: 2.8em;
+}
+
+.firstWrapperSectionTextRight{
+  font-family: "DM Serif Display", serif;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+
+/* Seccion Verde */
+.SectionGreen{
+  background-image: url(./img/fondoSection2.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionGreenTitle{
+  text-align: center;
+  
+  font-family: "DM Serif Display", serif;
+  font-size: 5em;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.sectionGreen1{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 20vw;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.greenTitle1{
+  display: flex;
+  align-items: center;
+  i{
+    color: #18f504;
+    padding-right: .5em;
+    font-size: 1.7em;
+  }
+  h4{
+    color: white;
+    font-size: 1.8em;
+  }
+}
+
+.sectionGreenText{
+  color: white;
+  font-size: 1.7em;
+  margin: 0;
+  text-align: end;
+}
+
+.sectionGreen2{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 20vw;
+  padding-bottom: 40px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.sectionGreen3{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 20vw;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.greenTitle3{
+  display: flex;
+  align-items: center;
+  i{
+    color: #18f504;
+    padding-right: .5em;
+    font-size: 1.7em;
+  }
+  h4{
+    color: white;
+    font-size: 1.8em;
+  }
+}
+
+.sectionGreenText3{
+  color: white;
+  font-size: 1.7em;
+  margin: 0;
+  text-align: start;
+}
+
+.sectionGreen4{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 20vw;
+  padding-bottom: 40px;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.sectionGreenImg{
+  width: 20vw;
+  height: 60vh;
+  overflow: hidden;
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.wrapperGreenSection{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 70vw;
+
+}

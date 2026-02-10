@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/718dcffbc3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Bilingüe</title>
+</head>
+<body>
+
+  <header class="header">
+
+    <img src="/img/logoAlexa.png" class="logo_alexa" alt="logo_alexa">
+
+    <div class="bookappointment">
+      <i class="calendar fa-regular fa-calendar-days"></i>
+      <p data-i18n="bookappointment" class="bookappointmentText"></p>
+      <a href="tel:+13215125231" class="phone-link">+1(321)512-5231</a>
+    </div>
+
+    <label class="lang-toggle">
+      <input type="checkbox" class="toggle-input" id="langToggle" />
+      <div class="toggle-slider"></div>
+    </label>
+
+  </header>
+
+  <main class="mainSection">
+
+    <h2 data-i18n="title" class="title"></h2>
+
+    <p data-i18n="mainText" class="mainText"></p>
+
+    <p data-i18n="mainService" class="mainService"></p>
+
+    <a href="tel:+13215125231" class="scheduleConsultation">
+      <p data-i18n="scheduleConsultation" ></p>
+      <i class="fa-solid fa-right-long"></i>
+    </a>
+
+  </main>
+
+  <section class="Section">
+
+    <h2 data-i18n="titleSectionOne" class="titleSectionOne"></h2>
+
+    <div class="contentSectionOne">
+
+      <div class="wrapperSection">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <h3 data-i18n="firstWrapperSectionTitleLeft" class="firstWrapperSectionTitleLeft"></h3>
+        <p data-i18n="firstWrapperSectionTextLeft" class="firstWrapperSectionTextLeft"></p>
+      </div>
+
+      <div class="wrapperSection">
+        <i class="fa-solid fa-earth-americas"></i>
+        <h3 data-i18n="firstWrapperSectionTitleCenter" class="firstWrapperSectionTitleCenter"></h3>
+        <p data-i18n="firstWrapperSectionTextCenter" class="firstWrapperSectionTextCenter"></p>
+      </div>
+
+      <div class="wrapperSection">
+        <i class="fa-solid fa-person-breastfeeding"></i>
+        <h3 data-i18n="firstWrapperSectionTitleRight" class="firstWrapperSectionTitleRight"></h3>
+        <p data-i18n="firstWrapperSectionTextRight" class="firstWrapperSectionTextRight"></p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="SectionGreen">
+
+    <h3 data-i18n="sectionGreenTitle" class="sectionGreenTitle"></h3>
+
+    <div class="wrapperGreenSection">
+
+      <div class="sectionGreen1">
+
+        <div class="greenTitle1">
+          <i class="fa-solid fa-star"></i>
+          <h4 data-i18n="sectionGreenTitle1" class="sectionGreenTitle1"></h4>
+        </div>
+
+        <h4 data-i18n="sectionGreenText1" class="sectionGreenText"></h4>
+
+      </div>
+
+      <div class="sectionGreen2">
+
+        <div class="greenTitle1">
+          <i class="fa-solid fa-check"></i>
+          <h4 data-i18n="sectionGreenTitle2" class="sectionGreenTitle1"></h4>
+        </div>
+
+        <h4 data-i18n="sectionGreenText2" class="sectionGreenText"></h4>
+
+      </div>
+
+      <div class="sectionGreen3">
+
+        <div class="greenTitle3">
+          <i class="fa-solid fa-language"></i>
+          <h4 data-i18n="sectionGreenTitle3" class="sectionGreenTitle3"></h4>
+        </div>
+
+        <h4 data-i18n="sectionGreenText3" class="sectionGreenText3"></h4>
+
+      </div>
+
+      <div class="sectionGreen4">
+
+        <div class="greenTitle3">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <h4 data-i18n="sectionGreenTitle4" class="sectionGreenTitle3"></h4>
+        </div>
+
+        <h4 data-i18n="sectionGreenText4" class="sectionGreenText3"></h4>
+
+      </div>
+
+      <img src="./img/img.jpg" alt="" class="sectionGreenImg">
+    </div>
+  </section>
+
+   
+
+  <script type="module" src="script.js"></script>
+</body>
