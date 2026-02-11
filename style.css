@@ -192,7 +192,7 @@ body{
 
 .titleSectionOne{
   font-family: 'AddingtonCF-Regular';
-  color: #14463e;
+  color: #15463F;
   display: flex;
   justify-content: center;
   font-size: 5em;
@@ -214,7 +214,7 @@ body{
   width: 20vw;
   height: 60vh;
   background: #efeeeb;
-  color: black;
+  color: #15463F;
   padding: 50px;
   transition: all 300ms ease;
   i{
@@ -229,34 +229,34 @@ body{
 }
 
 .firstWrapperSectionTitleLeft{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 2.8em;
 }
 
 .firstWrapperSectionTextLeft{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 1.7em;
   text-align: center;
 }
 
 .firstWrapperSectionTitleCenter{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 2.8em;
 }
 
 .firstWrapperSectionTextCenter{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 1.7em;
   text-align: center;
 }
 
 .firstWrapperSectionTitleRight{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 2.8em;
 }
 
 .firstWrapperSectionTextRight{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 1.7em;
   text-align: center;
 }
@@ -276,8 +276,7 @@ body{
 
 .sectionGreenTitle{
   text-align: center;
-  
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 5em;
   color: white;
   letter-spacing: 5px;
@@ -388,8 +387,9 @@ body{
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftWrapper{
@@ -400,7 +400,7 @@ body{
 }
 
 .getStartTitle{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 4.5em;
   color: #14463e;
   letter-spacing: 5px;
@@ -408,13 +408,14 @@ body{
 }
 
 .getStartText{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   font-size: 1.8em;
   color: #14463e;
+  text-align: start;
 }
 
 .calmNow{
-  font-family: "DM Serif Display", serif;
+  font-family: 'AddingtonCF-Regular';
   display: flex;
   align-items: center;
   font-size: 1.8em;
@@ -422,6 +423,7 @@ body{
   padding: 0 20px;
   color: white;
   border-radius: 50px;
+  text-decoration: none;
   p{
     padding: 0 20px;
   }
@@ -430,4 +432,58 @@ body{
     background: #648156;
     border-radius: 100%;
   }
+}
+
+.wrapperWhite{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dates{
+  font-family: 'AddingtonCF-Regular';
+  font-size: 1.8em;
+  color: #14463e;
+  font-weight: bold;
+}
+
+.rightWrapper{
+  img{
+    width: 35vw;
+    height: 20vw;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+}
+
+.intagram{
+  width: 35vw;
+  height: 20vw;
+  background: white;
+}
+
+.footer{
+  background-color: #15463F;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 20vw;
+  }
+}
+
+.copyright{
+  color: white;
+  font-family: 'AvenirNextLTPro-Regular';
+  font-size: 1.4em;
+  padding: 30px;
+}
+
+.privacidad{
+  color: #648156;
+  font-size: 1.2em;
+  width: 70vw;
+  text-align: center;
 }

@@ -22,7 +22,11 @@ export const translations = {
     sectionGreenText3: "Representación legal fluida en inglés y español para una comunicación clara durante todo su caso.", 
     sectionGreenTitle4: "Especialista en inmigración",
     sectionGreenText4: "Enfoque dedicado en la ley de inmigración con conocimiento profundo de los procesos de visa e inmigración basada en la familia.",
-    
+    GetStart: "Empieza hoy",
+    GetStartText: "Programe su consulta y dé el primer paso hacia la resolución de su asunto legal.",
+    calmNow: "Calma ahora!",
+    derechos: "©2025 Alexa Rossi Law. Todos los derechos reservados.",
+    privacidad: "Aviso legal: La información de este sitio web es solo para fines informativos y no constituye asesoramiento legal. El uso de este sitio web no establece una relación abogado-cliente. Contáctenos directamente para hablar sobre su asunto legal específico.",
   },
   en: {
     bookappointment: "Book your appointment",
@@ -49,5 +53,7 @@ export const translations = {
     GetStart: "Get Started Today",
     GetStartText: "Schedule your consultation and take the first step toward resolving your legal matter.",
     calmNow: "Calm now!",
+    derechos: "©2025 Alexa Rossi Law. All rights reserved.",
+    privacidad: "Disclaimer: The information on this website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this website. Please contact us directly to discuss your specific legal matter.",
   }
 };
