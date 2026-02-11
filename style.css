@@ -459,7 +459,8 @@ body{
 .intagram{
   width: 35vw;
   height: 20vw;
-  background: white;
+  border-radius: 20px;
+  
 }
 
 .footer{
