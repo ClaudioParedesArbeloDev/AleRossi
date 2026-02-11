@@ -38,6 +38,10 @@ body{
   object-fit: contain;
 }
 
+.logo_alexa_iniciales{
+  display: none;
+}
+
 .bookappointment{
   display: flex;
   color: white;
@@ -490,4 +494,169 @@ body{
   font-size: 1.2em;
   width: 70vw;
   text-align: center;
+}
+
+/* Version Mobile */
+
+@media only screen and (max-width: 768px) {
+  .logo_alexa{
+    display: none;
+  }
+
+  .logo_alexa_iniciales{
+    display: block;
+    width: 60px;
+    padding: 10px;
+  }
+
+  .bookappointment{
+    display: grid;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;    
+    grid-template-columns: 30px, 200px;
+    grid-template-rows: repeat(2, 1fr);
+    i{
+      grid-column: 1;
+      grid-row: 1/3;
+    }
+  }
+
+  .bookappointmentText{
+    font-size: .5em;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+  .phone-link{
+    font-size: .5em;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .lang{
+  
+  font-size: .5rem;
+  
+  }
+
+  .toggle-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-slider {
+    position: relative;
+    width: 4rem;           
+    height: 2rem;          
+  }
+
+  .toggle-slider::after {
+    top: 0.2rem;
+    left: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #648156;    
+  }
+
+.toggle-input:checked + .toggle-slider::after {
+  transform: translateX(2rem);
+  background: #648156;
+}
+
+.toggle-input:focus + .toggle-slider {
+  outline-offset: 2px;
+}
+.mainSection{
+  background-position: center;
+}
+
+.title{
+  font-size: 1.5em;
+}
+.mainText{
+  font-size: 1.2em;
+}
+.mainService{
+  font-size: 1.2em;
+}
+.scheduleConsultation{
+  font-size: 1em;
+  width: 40vw;
+  img{
+    width: 20px;
+    padding: 15px;
+  }
+}
+
+.contentSectionOne{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titleSectionOne{
+  font-size: 2.5em;
+  padding: 0;
+}
+
+.wrapperSection{
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  margin: 10px 0 10px 0;
+  i{
+    font-size: 2.5em;
+  }
+}
+.firstWrapperSectionTitleLeft{
+  font-size: 1em;
+}
+
+.firstWrapperSectionTextLeft{
+  font-size: 1em;
+}
+
+.firstWrapperSectionTitleCenter{
+  font-size: 1em;
+}
+
+.firstWrapperSectionTextCenter{
+  font-size: 1em;
+}
+
+.firstWrapperSectionTitleRight{
+  font-size: 1em;
+}
+
+.firstWrapperSectionTextRight{
+  font-size: 1em;  
+}
+
+.sectionGreenTitle{
+  font-size: 2em;
+  padding: 0;
+}
+
+.sectionGreenImg{
+  display: none;
+}
+
+.footer{
+  height: 21vh;
+  img{
+    width: 30vw;
+  }
+}
+
+.copyright{
+  font-size: 1em;
+  padding: 10px;
+}
+
+.privacidad{
+  font-size: .5em;
+}
+
 }
