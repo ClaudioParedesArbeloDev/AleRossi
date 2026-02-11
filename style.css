@@ -382,6 +382,8 @@ body{
 
 }
 
+
+/* Seccion con los datos */
 .sectionWhite{
   background-image: url(./img/sectionFinal.jpg);
   background-size: cover;
@@ -435,6 +437,7 @@ body{
 }
 
 .wrapperWhite{
+  width: 80vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
