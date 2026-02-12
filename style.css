@@ -463,7 +463,7 @@ body{
 
 }
 
-.intagram{
+.instagram{
   width: 35vw;
   height: 20vw;
   border-radius: 20px;
@@ -634,13 +634,147 @@ body{
   font-size: 1em;  
 }
 
+
+.SectionGreen{
+  background-position: center;
+}
+
 .sectionGreenTitle{
   font-size: 2em;
-  padding: 0;
+}
+
+.sectionGreen1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+  
+}
+
+.greenTitle1{
+  display: flex;
+  align-items: center;
+  i{
+    color: #18f504;
+    padding-right: .5em;
+    font-size: 1em;
+  }
+  h4{
+    color: white;
+    font-size: 1.4em;
+  }
+}
+
+.sectionGreenText{
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.sectionGreen2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.sectionGreen3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.greenTitle3{
+  display: flex;
+  align-items: center;
+  i{
+    color: #18f504;
+    padding-right: .5em;
+    font-size: 1em;
+  }
+  h4{
+    color: white;
+    font-size: 1.4em;
+  }
+}
+
+.sectionGreenText3{
+  color: white;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.sectionGreen4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  padding-bottom: 30px;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .sectionGreenImg{
   display: none;
+}
+
+.wrapperGreenSection{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+
+}
+
+.sectionWhite{
+  background-position: center;
+  flex-direction: column;
+}
+
+.leftWrapper{
+  width: 80vw;
+}
+.getStartTitle{
+  font-size: 2em;
+}
+
+.getStartText{
+  font-size: 1em;
+}
+
+.calmNow{
+  font-size: 1.3em;
+}
+
+.dates{
+  font-size: 1.3em;
+}
+
+.imgJustice{
+  display: none;
+}
+
+.instagram{
+
+  img{
+    width: 70vw;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+}
+
+.wrapperWhite{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer{
